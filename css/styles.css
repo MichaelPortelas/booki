@@ -4,3 +4,8 @@
  box-sizing: border-box;
 /* box-sizing est appliqué à tous les éléments */
 }
+
+body{
+    font-family: 'Raleway', serif;
+    
+}
