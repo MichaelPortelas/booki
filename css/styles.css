@@ -1,40 +1,54 @@
-/* Déclaration box-sizing */
 
 * {
- box-sizing: border-box;
-/* box-sizing est appliqué à tous les éléments */
+    box-sizing: border-box;
 }
+
+h1{
+    font-size: 19px;
+}
+
+h2{
+    font-size: 16px;
+}
+
 
 body{
     font-family: 'Raleway', serif;
-    color: #000;
-    
+    color: #000;  
 }
 
-#bloc_page
-{
-    width: 900px;
-    margin: auto;
+#bloc_page{
+    /* width: 1482.92px; */
+    width: 1600px;
+    height: auto;
+    /*padding-top: 24.91px;*/
+    padding-left: 55.18px;
+    padding-right: 56.96px;
+    font-size: 14px;
 }
 
-@media all and (max-width: 992px)
-{
+@media all and (max-width: 992px){
     #bloc_page
     {
         width:auto;
     }
 }
 
+
+/**/
 /* HEADER */
+/**/
 
 header{
     display: flex;
+    height: 75.01px;
     width: 100%;
     justify-content: space-between;
-    align-items: flex-end;    
+    align-items: center;    
 }
 
 #logo{
+    padding-left: 17.88px;
     align-items: baseline;
 }
 
@@ -50,15 +64,16 @@ nav li{
 }
 
 nav a{
-    font-size: 21px;
+    font-size: 14px;
     color: #000;
-    padding-top: 40px;
-    padding-bottom: 3px;
+    padding-top: 52.5px;
+    padding-bottom: 25.92px;
     text-decoration: none;
 }
 
 nav a:hover{
     color: #0065FC;
+    font-weight: bold;
     border-top: 3px solid #0065FC;
 }
 
@@ -117,8 +132,10 @@ nav a:hover{
     }
 
     nav a{
-        font-size: 17px;
-        padding-top: 0px;
+        border: 1px solid black; /* marque de test */
+        font-size: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
         border-bottom: 3px solid #f2f2f2;
     }
 
@@ -129,6 +146,148 @@ nav a:hover{
         
     }
 }
+
+
+
+/*  MAIN  */
+main{
+    display: flex;
+    width: auto;
+}
+
+/**/
+/* FIND */
+/**/
+
+#search{
+    height: 360.28px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#search_title{
+    padding-top: 44.08px;
+    padding-left: 1px;
+    height: 100.60px;
+    width: auto;
+}
+
+/* search */
+#search_form{
+    padding-top: 19.49px;
+    padding-left: 4px;
+    height: 100.05px;
+    width: auto;
+}
+
+form{
+    padding-top: 19.49px;
+    padding-bottom: 24.57px;
+}
+
+.form_icon{
+    font-size: 21px;
+    padding: 17px 20.51px 16px 20.88px;
+    color: #000;
+    border: 1px solid #f2f2f2;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #f2f2f2;
+}
+
+.form_in_txt{
+    border: 1px solid #f2f2f2;
+    color: #000;
+    font-weight: bold;
+    margin-left: -4px;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    padding-left: 20.49px;
+}
+
+.form_in_sub{
+    border:  1px solid #0065FC;
+    background-color: #0065FC;
+    color: #fff;
+    font-weight: bold;
+    margin-left: -4px;
+    padding: 24px 18.67px 18px 18.67px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+}
+.form_in_sub_mob{
+    border:  1px solid #0065FC;
+    background-color: #0065FC;
+    color: #fff;
+    font-weight: bold;
+    margin-left: -4px;
+    padding: 24px 18.67px 18px 18.67px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+}
+
+.fa-input {
+    font-family: FontAwesome, 'Raleway', serif;
+}
+
+@media all and (min-width: 992px){
+    .form_in_sub_mob{
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    .form_in_sub_mob{
+        display: none;
+    }
+}
+
+@media all and (max-width: 767px){
+    .form_in_sub{
+        display: none;
+    }
+
+    .form_in_sub_mob{
+        margin-left: -15px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
+
+#search_filter{
+    padding-top: 10.43px;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black; /* marque de test */
+    height: 79.37px;
+    width: auto;
+}
+
+#search_info{
+    height: 80.26px;
+    padding-top: 25.06px;
+    padding-left: 9px;
+    width: auto;
+    border: 1px solid black; /* marque de test */
+}
+
+.i-search-label {
+    position: relative;
+	left: -6px;
+	display: inline-block;
+	padding: 8px 8px;
+    border: 2px solid #f2f2f2;
+	border-radius: 45px;
+    color: #0065FC;
+}
+
+/* Filtre */
 
 /* 
 Boutton Filtre
@@ -141,6 +300,7 @@ button{
     border-left-style: none;
     color: #000;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 }
 

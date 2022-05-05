@@ -21,7 +21,9 @@
     </head>
 
     <body>
-        <div id="bloc_page">         
+        <div id="bloc_page">
+            
+            <!-- Start Header -->
             <header>
                 <div id="logo"><img src="./images/logo/Booki.png" alt="Logo Booki"/></div>
                 <nav>
@@ -31,7 +33,42 @@
                     </ul>
                 </nav>
             </header>
-            <main></main>
+
+            <!-- Start Main -->
+            <main>
+                <section id="search">
+
+                    <div id="search_title">
+                        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+
+                    <div id="search_form">
+                        <form method="post" action="#">
+                            <span class="form_icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <input class="form_in_txt" type="text" name="ville" id="ville" placeholder="Marseille, France"/>
+                            <input class="form_in_sub" type="submit" value="Rechercher"/>
+                            <input type="submit" class="form_in_sub_mob fa-input" value="&#xf002;">
+                        </form>
+                    </div>
+
+                    <div id="search_filter">
+                        <h2>Filtres</h2>
+                        <section id="filter">
+                            <button class="btn btn-labeled"><span class="btn-label"><i class="fa-solid fa-money-bill-wave"></i></span>Économique</button>
+                            <button class="btn btn-labeled"><span class="btn-label"><i class="fa-solid fa-child-reaching"></i></span>Familiale</button>
+                            <button class="btn btn-labeled"><span class="btn-label"><i class="fa-solid fa-heart"></i></span>Romantique</button>
+                            <button class="btn btn-labeled"><span class="btn-label"><i class="fa-solid fa-dog"></i></span>Animaux autorisés</button>
+                        </section>
+                    </div>
+
+                    <div id="search_info">
+                        <p><span class="i-search-label"><i class="fa-solid fa-info"></i></span> Plus de 500 logement disponibles dans cette ville.</p>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Start Footer -->
             <footer></footer>
         </div> 
     </body>
