@@ -21,7 +21,7 @@ body{
     /* width: 1482.92px; */
     width: 1600px;
     height: auto;
-    /*padding-top: 24.91px;*/
+    padding-top: 24.91px;
     padding-left: 55.18px;
     padding-right: 56.96px;
     font-size: 14px;
@@ -41,15 +41,15 @@ body{
 
 header{
     display: flex;
-    height: 75.01px;
+    height: 99.92px;
     width: 100%;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 #logo{
-    padding-left: 17.88px;
-    align-items: baseline;
+    padding-left: 21.82px;
+    
 }
 
 /* Navigation */
@@ -66,8 +66,10 @@ nav li{
 nav a{
     font-size: 14px;
     color: #000;
-    padding-top: 52.5px;
+    padding-top: 65px;
+    padding-right: 25.05px;
     padding-bottom: 25.92px;
+    padding-left: 33.42px;
     text-decoration: none;
 }
 
