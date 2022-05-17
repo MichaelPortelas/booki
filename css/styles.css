@@ -987,13 +987,19 @@ footer{
     font-size: 15px;
 }
 
+@media all and (min-width: 768px) and (max-width: 992px){
+    footer{
+        margin: 0px;
+    }
+}
+
 @media all and (max-width: 768px){
     footer{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         padding-left: 57.48px;
-        margin: 0px;
+        margin: 67px 0px 0px 0px;
     }
 
 
